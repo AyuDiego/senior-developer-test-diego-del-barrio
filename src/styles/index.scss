@@ -1,73 +1,387 @@
-$fa-font-path: "../../node_modules/font-awesome/fonts";
-@import '~font-awesome/scss/font-awesome.scss';
-$body-color: #000000;
+        $fa-font-path: "../../node_modules/font-awesome/fonts";
+        @import '~font-awesome/scss/font-awesome.scss';
+        $body-color: #000000;
 
-body {
- 
-  color: $body-color;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  main section article div.subheader-style{
-    margin: -8px !important;
-    margin-top: 0 !important;
-    margin-bottom: 0 !important;
-  } 
-}
-.logo{
-  background: url("../images/cortefiel-logo.png") no-repeat;
-  min-height:  120px; 
-  display: block; 
-  
-  text-indent: -9999px;
-}
-.margin-left-auto{
-  margin-left: auto;
-}
-.padding-right-4{
-  padding-right:4%;
-}
-.border-grey{
-  border-top: 1px solid #E6E6E6;
-  border-bottom: 1px solid #E6E6E6;
-}
-.font-color-grey{
- color:  #B2B2B2;
-}
-.font-type-georgia{
-  font-family: Georgia;
-  font-weight: bold;
-   
-}
-.black{
-  color:$body-color;
-}
-.center-elements  {
-  align-items: center;
-  display: flex;  
-}
-.space-arround-elements{
-  justify-content: space-around;
-}
-.margin-bottom-2{
-  margin-bottom: 2%;
-}
-.color-text-green{ 
-  color: #417505;
-}
- 
-.flex-end { align-self: flex-end; }
-.icon-shop{
-  background: url("../images/shop.png") no-repeat;
-  display: block;
-  width:  22px;
-  height: 22px;   
+        body {
 
-  
-  text-indent: -9999px;
-}
-.icon-shop-up{
-  display: block;
-  width:  22px;
-  height: 22px;  
-  background: url("../images/iconschevronup@2x.png") no-repeat;
-  background-size: 22px 22px;
-}
+          color: $body-color;
+          font-family: 'Open Sans';
+
+          main section article div.subheader-style {}
+        }
+        
+        .container, .header, .footer {
+          width: 100%;
+          
+          @media screen and (min-width: 981px) {
+            width: calc(100% - 366px);
+            border-right: 3px solid #666; 
+          }
+        }
+
+        .side-bar {
+          display: none;
+          @media screen and (min-width: 981px) {
+            
+            display: block;
+            float: right;
+            width: 366px;
+          }
+        }
+
+        .logo {
+          background: url("../images/cortefiel-logo.png") no-repeat;
+          min-height: 120px;
+          display: block;
+
+          text-indent: -9999px;
+        }
+
+        .margin-left-auto {
+          margin-left: auto;
+        }
+
+        .padding-right-4 {
+          padding-right: 4%;
+        }
+
+        .border-grey-send {
+          border-top: 1px solid #E6E6E6;
+
+        }
+
+        .border-grey {
+          border-top: 1px solid #E6E6E6;
+          border-bottom: 1px solid #E6E6E6;
+        }
+
+        .font-color-grey {
+          color: #B2B2B2;
+        }
+
+        .title-envio {
+          font-family: Georgia;
+          font-weight: bold;
+
+        }
+
+        .btn-group {
+          width: 100%;
+          margin-top: 32px;
+          margin-bottom: 32px;
+          text-align: center;
+        }
+
+        .black {
+          color: $body-color;
+        }
+
+        .center-elements {
+          align-items: center;
+          display: flex;
+        }
+
+        .space-arround-elements {
+          justify-content: space-around;
+        }
+
+        .margin-bottom-2 {
+          margin-bottom: 2%;
+        }
+
+        .color-text-green {
+          color: #417505;
+        }
+
+        .flex-end {
+          align-self: flex-end;
+        }
+
+        .icon-shop {
+          background: url("../images/shop.png") no-repeat;
+          display: block;
+          width: 22px;
+          height: 22px;
+
+
+          text-indent: -9999px;
+        }
+
+        .footer-text {
+          color: #000000;
+          font-family: "Open Sans";
+          font-size: 12px;
+          line-height: 16px;
+          font-weight: bold;
+
+        }
+
+        .footer-phone-text {
+          padding-right: 1%;
+        }
+
+        .icon-shop-up {
+          display: block;
+          width: 22px;
+          height: 22px;
+          background: url("../images/iconschevronup@2x.png") no-repeat;
+          background-size: 22px 22px;
+        }
+
+        .card-items {
+          margin: 6%;
+
+        }
+
+        .card-item {
+          padding-right: 2%;
+        }
+
+        .button-1 {
+          background-color: #000000;
+          border-radius: 2px;
+          width: 335px;
+          height: 44px;
+          color: #FFFFFF;
+          font-family: "Open Sans";
+          font-size: 12px;
+          display: inline-block;
+          text-align: center;
+        }
+
+        .box-item {
+          &.error{
+            .box-item-input{
+              border-color:red ;
+            }
+             .box-item-error{
+               display: block;
+             }
+          }
+          .box-item-icon {
+            display: none;
+          }
+
+          .box-item-error {
+            width: 100%;
+            display: none;
+          }
+          .box-item-info{
+            width: 100%;
+            display: inline-block;
+          }
+        }
+
+        .group-box-checkbox {
+          margin-top: 5%;
+          display: flex;
+          flex-direction: column;
+
+          .box-checkbox:first-child {
+            margin-bottom: 28px;
+          }
+        }
+
+        .box-checkbox {
+          margin-bottom: 28px;
+          width: 100%;
+          font-family: "Open Sans", sans-serif;
+
+          .box-checkbox-container {
+            display: flex;
+          }
+
+          .box-checkbox-square {
+            background-color: #ffffff;
+            border: 1px solid #b2b2b2;
+            border-radius: 2px;
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            margin-right: 8px;
+            cursor: pointer;
+
+            .square-icon {
+              display: none;
+              font-size: 20px;
+            }
+          }
+
+          .box-checkbox-label {
+            cursor: pointer;
+            display: inline-block;
+            color: #000000;
+            font-size: 14px;
+            line-height: 20px;
+          }
+
+          .box-checkbox-input {
+            display: none;
+
+            &:checked+.box-checkbox-square {
+              color: #000000;
+
+              .square-icon {
+                display: block;
+              }
+            }
+          }
+        }
+
+        .footer-items-center {
+          display: flex;
+          justify-content: center;
+        }
+
+
+
+        ////
+        .box-subtitle {
+          color: #000000;
+          font-family: "Open Sans", sans-serif;
+          font-size: 14px;
+          line-height: 20px;
+          font-weight: 600;
+        }
+
+        ////
+        .box-list {
+          font-family: "Open Sans", sans-serif;
+          margin: 0;
+          padding: 0;
+
+          .box-list-item {
+            list-style-type: none;
+            border-top: 1px solid #E6E6E6;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            min-height: 80px;
+
+            &:last-child {
+              border-bottom: 1px solid #E6E6E6;
+              min-height: 70px;
+            }
+          }
+        }
+
+        ///
+        .box-radio {
+          display: flex;
+          justify-content: center;
+          width: 40px;
+          align-items: center;
+
+          @media screen and (min-width: 981px) {
+            width: 100px;
+          }
+
+          .box-radio-circle {
+            background-color: #FFFFFF;
+            border: 1px solid #B2B2B2;
+            border-radius: 100%;
+            width: 20px;
+            height: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .circle-icon {
+              display: none;
+              background-color: #000000;
+              border-radius: 100%;
+              width: 10px;
+              height: 10px;
+            }
+          }
+
+          .box-radio-input {
+            display: none;
+
+            &:checked+.box-radio-circle>.circle-icon {
+              display: block;
+            }
+          }
+        }
+
+
+        ////
+        .box-shipping-info {
+          font-family: "Open Sans", sans-serif;
+          width: 100%;
+
+          @media screen and (min-width: 981px) {
+            width: calc(100% - 100px);
+          }
+
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          .box-shipping-info-wrap {
+            display: inlne-block;
+
+            &:last-child {
+              min-width: 100px;
+              text-align: right;
+            }
+          }
+        }
+
+        .info-subtitle {
+          color: #000000;
+          font-size: 14px;
+          line-height: 20px;
+        }
+
+        .info-caption {
+          color: #B2B2B2;
+          font-size: 12px;
+          line-height: 20px;
+          margin: 0;
+          padding: 0;
+        }
+
+        .info-price-num {
+          color: #000000;
+          font-size: 14px;
+          line-height: 20px;
+          width: 42px;
+          font-weight: bold;
+
+          &.not-stock {
+            text-decoration: line-through;
+          }
+        }
+
+        .info-price-promo {
+          color: #437708;
+          font-size: 14px;
+          line-height: 20px;
+        }
+
+        .box-gift {
+          display: flex;
+          align-items: center;
+          width: 100%;
+          justify-content: space-between;
+          padding-left: 10px;
+
+          .icon-gift {
+            margin-right: 14px;
+          }
+
+          .icon-arrow {
+            justify-selft: right;
+          }
+
+        }
+
+
+        // form#compra [required]{
+        // border:solid 1px red;
+        // }
+
+        // input:required {
+        // outline: 1px solid red;
+        // }

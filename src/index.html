@@ -1,110 +1,299 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+    <script src="./scripts/validation.js"></script>
   <title>webpack starterkit</title>
 </head>
+
 <body>
-	<header>
+  <header class="header">
 
-    <a href="#" class="black"><i href="#"  class="fa fa-chevron-left fa-fw fa-lg" aria-hidden="true"></i></a>
+    <a href="#" class="black"><i href="#" class="fa fa-chevron-left fa-fw fa-lg" aria-hidden="true"></i></a>
     <div class="logo"></div>
-	</header>
-	
-	<main>
-		<section class="principal">
-    <article> 
-      <div class="border-grey subheader-color subheader-style-resume">
-      
+  </header>
 
-         <a href="#" class="padding-right-4 black icon-shop-up "></a>Resumen del Pedido  
-        
-        
-       
-      <div class="margin-left-auto">
-        <b>109,98€</b>
-        <a href="#" class="black "><i href="#" class="fa  fa-chevron-right fa-lg" aria-hidden="true"></i></a>
-       </div> 
-      </div>
-    </article>
-		 
-    <article>
-      <div class=" font-color-grey  border-grey subheader-style">
-      <section class="font-type-georgia">1. Mi cuenta</section>
-      John Smith Adam 
-      </div>
-    </article>
-    <article>
-      <div class="send-style border-grey subheader-style">
-      <section class="font-type-georgia">2. Envío
-      </section>
-          <section class="center-elements space-arround-elements rectangle-black subheader-color margin-bottom-2 ">
-              <article class="center-icon"> 
-              <i class="fa fa-home fa-2x" aria-hidden="true"></i>
+  <main class="container">
+    <section class="principal">
+      <article class="resumen-pedido">
+        <div class="border-grey subheader-color subheader-style-resume">
+
+
+          <a href="#" class="padding-right-4 black icon-shop-up "></a>Resumen del Pedido
+
+
+
+          <div class="margin-left-auto">
+            <b>109,98€</b>
+            <a href="#" class="black "><i href="#" class="fa  fa-chevron-right fa-lg" aria-hidden="true"></i></a>
+          </div>
+        </div>
+      </article>
+
+      <article>
+        <div class=" font-color-grey  border-grey subheader-style">
+          <div class="title-envio">1. Mi cuenta</div>
+          John Smith Adam
+        </div>
+      </article>
+      <article>
+        <div class="send-style border-grey-send subheader-style">
+          <div class="title-envio">2. Envío
+          </div>
+          <div class="column-2">
+
+            <section class="center-elements space-arround-elements rectangle-black subheader-color margin-bottom-2 ">
+              <article class="center-icon">
+                <i class="fa fa-home fa-2x" aria-hidden="true"></i>
               </article>
               <article>
                 <h3>Entrega a domicilio</h4>
-              <h5 class="font-color-grey">3 - 5 días laborables</h6>
+                  <h5 class="font-color-grey">3 - 5 días laborables</h6>
               </article>
               <article class="flex-end">
                 <h3><del>3,95€</del> <span class="color-text-green">Gratis</span></h3>
               </article>
-          </section>
-          <section class="center-elements space-arround-elements rectangle-grey subheader-color  margin-bottom-2 ">
-              <article class="center-icon"> 
-                <i class="icon-shop" ></i>
+            </section>
+            <section class="center-elements space-arround-elements rectangle-grey subheader-color  margin-bottom-2 ">
+              <article class="center-icon">
+                <i class="icon-shop"></i>
               </article>
               <article>
                 <h3>Entrega a domicilio</h4>
-                <h5 class="font-color-grey">3 - 5 días laborables</h6>
+                  <h5 class="font-color-grey">3 - 5 días laborables</h6>
               </article>
               <article class="flex-end">
                 <h3><del>3,95€</del> <span class="color-text-green">Gratis</span></h3>
               </article>
-           </section>
-           <section>
-            <h1 style="text-align: center"> Rellena los datos para entregar tu pedido:</h1>      
-            <form name="RegForm" action="/submit.php" onsubmit="return GEEKFORGEEKS()" method="post">  
-      
-              <input type="text" size=65 name="name" placeholder="Nombre"><br>        
-              <input type="text" size=65 name="subname" placeholder="Apellidos">   <br> 
-              <input type="text" size=65 name="adress" placeholder="Dirección"> <br> 
-              <input type="text" size=65 name="info" placeholder="Más información (Opcional)"><br> 
-              <input type="number" size=7 name="postalCode" placeholder="Código postal"> <br>   
-              <input type="text" size=65 name="city" placeholder="Ciudad"> <br>   
-              <input type="text" size=65 name="provincia" placeholder="Provincia"> <br>   
-              <input type="text" size=65 name="Telephone" placeholder="Provincia"> <br>   
-              <input type="text" size=65 name="Telephone" placeholder="Provincia"> <br>          
-              <article  >
-                <div>
-                  <div>
-                    <span style="vertical-align:top" >
-                      <input type="tel" id="input_5_area" name="prefix" class="form-textbox" size="6" value="" placeholder="Prefijo" >
-                    </span>
-                    <span  style="vertical-align:top">
-                      <input type="tel" id="input_5_phone" name="phoneNumber5" class="form-textbox" size="12" value="">
-                    </span>
+            </section>
+          </div>
+          <section>
+            <h4> Rellena los datos para entregar tu pedido:</h1>
+              <form name='formulario-js' onsubmit='return validar()'>
+                <div class="column-2">
+                  <div class="box-item">
+                    <input class="box-item-input" type="text" id="name" name="name" placeholder="Nombre" required>
+                    <span class="box-item-icon"><i class="fa fa-check"></i></span>
+                    <span class="box-item-error">Este campo es obligatorio.</span>
+                  </div>
+                  <div class="box-item">
+                    <input class="box-item-input" type="text" id="subname" name="subname" placeholder="Apellidos"
+                      required>
+                    <span class="box-item-icon"><i class="fa fa-check"></i></span>
+                    <span class="box-item-error">Este campo es obligatorio.</span>
                   </div>
                 </div>
-              </article>
-                
-              <p><input type="submit" value="send" name="Submit">      
-                  <input type="reset" value="Reset" name="Reset">   
-              </p>          
-          </form> 
-           </section>
+
+
+                <div class="column-2">
+                  <div class="box-item">
+                    <input class="box-item-input" type="text" name="adress" placeholder="Dirección" required>
+                    <span class="box-item-icon"><i class="fa fa-check"></i></span>
+                    <span class="box-item-error">Este campo es obligatorio.</span>
+                  </div>
+                  <div class="box-item">
+                    <input class="box-item-input" type="text" name="info" placeholder="Más información (Opcional)">
+                    <span class="box-item-icon"><i class="fa fa-check"></i></span>
+                    <span class="box-item-error">Este campo es obligatorio.</span>
+                  </div>
+                </div>
+                <div class="column-2">
+                  <div class="box-item">
+                    <input class="box-item-input" type="number" name="postalCode" placeholder="Código postal" required>
+                    <span class="box-item-icon"><i class="fa fa-check"></i></span>
+                    <span class="box-item-error">Este campo es obligatorio.</span>
+                  </div>
+                  <div class="box-item">
+                    <input class="box-item-input" type="text" name="city" placeholder="Ciudad" required>
+                    <span class="box-item-icon"><i class="fa fa-check"></i></span>
+                    <span class="box-item-error">Este campo es obligatorio.</span>
+                  </div>
+                </div>
+                <div class="column-2">
+                  <div class="box-item">
+                    <input class="box-item-input" type="number" name="postalCode" placeholder="Código postal" required>
+                    <span class="box-item-icon"><i class="fa fa-check"></i></span>
+                    <span class="box-item-error">Este campo es obligatorio.</span>
+                  </div>
+                  <div class="box-item">
+                    <input class="box-item-input" type="text" name="city" placeholder="Ciudad">
+                    <span class="box-item-icon"><i class="fa fa-check"></i></span>
+                    <span class="box-item-error">Este campo es obligatorio.</span>
+                  </div>
+                </div>
+                <div class="column-2">
+                  <div class="fix-50">
+                    <div class="box-item">
+                      <input class="box-item-input" type="text" name="city" placeholder="Provincia">
+                      <span class="box-item-icon"><i class="fa fa-check"></i></span>
+                      <span class="box-item-error">Este campo es obligatorio.</span>
+                    </div>
+
+                  </div>
+                  <div class="fix-50">
+                    <div class="box-item box-item-prefix">
+                      <input class="box-item-input" type="number" name="postalCode" placeholder="Prefijo" required>
+                      <span class="box-item-icon"><i class="fa fa-check"></i></span>
+                      <span class="box-item-error">Este campo es obligatorio.</span>
+                    </div>
+                    <div class="box-item box-item-phone">
+                      <input class="box-item-input" type="text" name="city" placeholder="Telefono" required>
+                      <span class="box-item-icon"><i class="fa fa-check"></i></span>
+                      <span class="box-item-error">Este campo es obligatorio.</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="column-2">
+
+                  <div class="box-item">
+                    <input class="box-item-input" type="number" name="nif"
+                      placeholder="NIF (solo Canarias, Ceuta y Melilla) " required>
+                    <span class="box-item-icon"><i class="fa fa-check"></i></span>
+                    <span class="box-item-error">Este campo es obligatorio.</span>
+                  </div>
+                  <div class="box-item">
+                    <input class="box-item-input" type="text" name="adressName" placeholder="Nombre de la dirección"
+                      required>
+                    <span class="box-item-icon"><i class="fa fa-check"></i></span>
+                    <span class="box-item-error">Este campo es obligatorio.</span>
+                    <br>
+                    <span class="box-item-info">Ej.: Casa / Trabajo </span>
+                  </div>
+                </div>
+                <div class="">
+                  <label class="pais">Pais</label>
+                  <p>
+                    España
+                  </p>
+                </div>
+                <div class="group-box-checkbox ">
+                  <div class="box-checkbox">
+                    <label for="checkboxOne" class="box-checkbox-container">
+                      <input id="checkboxOne" class="box-checkbox-input" type="checkbox" required />
+                      <span class="box-checkbox-square"> <i class="square-icon fa fa-check"></i></span>
+                      <span class="box-checkbox-label">Guardar dirección para próximas compras</span>
+                    </label>
+                  </div>
+                  <div class="box-checkbox">
+                    <label for="checkboxTwo" class="box-checkbox-container">
+                      <input id="checkboxTwo" class="box-checkbox-input" type="checkbox" />
+                      <span class="box-checkbox-square"> <i class="square-icon fa fa-check"></i></span>
+                      <span class="box-checkbox-label">Añadir comentarios o instrucciones para la entrega</span>
+                    </label>
+                  </div>
+                  <div class="box-checkbox">
+                    <label for="checkboxTree" class="box-checkbox-container">
+                      <input id="checkboxTree" class="box-checkbox-input" type="checkbox" />
+                      <span class="box-checkbox-square"> <i class="square-icon fa fa-check"></i></span>
+                      <span class="box-checkbox-label">Usar esta dirección para facturación</span>
+                    </label>
+                  </div>
+                </div>
+
+                <h3 class="box-subtitle">Selecciona un método de entrega:</h3>
+                <ul class="box-list">
+                  <li class="box-list-item">
+                    <span class="box-radio">
+                      <label for="radioOne">
+                        <input id="radioOne" name="radioShipping" class="box-radio-input" type="radio" checked />
+                        <span class="box-radio-circle"><span class="circle-icon"></span></span>
+                      </label>
+                    </span>
+                    <aside class="box-shipping-info">
+                      <div class="box-shipping-info-wrap">
+                        <span class="info-subtitle">Envío estándar</span>
+                        <p class="info-caption">Entrega en 3 - 5 días laborables.</p>
+                      </div>
+                      <div class="box-shipping-info-wrap">
+                        <span class="info-price-num not-stock">3,95 €</span>
+                        <span class="info-price-promo">Gratis</span>
+                      </div>
+                    </aside>
+                  </li>
+                  <li class="box-list-item">
+                    <span class="box-radio">
+                      <label for="radioTwo">
+                        <input id="radioTwo" name="radioShipping" class="box-radio-input" type="radio" />
+                        <span class="box-radio-circle"><span class="circle-icon"></span></span>
+                      </label>
+                    </span>
+                    <aside class="box-shipping-info">
+                      <div class="box-shipping-info-wrap">
+                        <span class="info-subtitle">Envío express</span>
+                        <p class="info-caption">Entrega en 1 - 2 días laborables. Excepto: Canarias, Baleares, Ceuta y
+                          Melilla.</p>
+                      </div>
+                      <div class="box-shipping-info-wrap">
+                        <span class="info-price-num">5,30 €</span>
+                      </div>
+                    </aside>
+                  </li>
+                  <li class="box-list-item">
+                    <span class="box-radio">
+                      <label for="radioThree">
+                        <input id="radioThree" name="radioShipping" class="box-radio-input" type="radio" />
+                        <span class="box-radio-circle"><span class="circle-icon"></span></span>
+                      </label>
+                    </span>
+                    <aside class="box-shipping-info">
+                      <div class="box-shipping-info-wrap">
+                        <span class="info-subtitle">Entrega en el mismo día</span>
+                        <p class="info-caption">Pedidos antes de las 13:30 en Madrid.</p>
+                      </div>
+                      <div class="box-shipping-info-wrap">
+                        <span class="info-price-num">6,95 €</span>
+                      </div>
+                    </aside>
+                  </li>
+                  <li class="box-list-item">
+                    <aside class="box-gift">
+
+                      <span class="info-subtitle"><i class="fa fa-gift icon-gift"></i>¿Es para regalo?</span>
+                      <i class="fa fa-chevron-down icon-arrow"></i>
+                    </aside>
+                  </li>
+
+
+                </ul>
+
+                <div class="btn-group">
+
+                  <button type="submit" class="button-1">CONTINUAR A PAGO </button>
+                </div>
+
+              </form>
+
+              <div class="send-style font-color-grey  border-grey subheader-style">
+                <div class="title-envio">3. Pago</div>
+              </div>
+
+          </section>
+        </div>
+      </article>
+    </section>
+  </main>
+  <section class="side-bar">
+
+  </section>
+  <footer class="footer">
+    <div class="footer-items-center footer-text">
+      <i href="#" class="fa  fa-volume-control-phone fa-lg footer-phone-text" aria-hidden="true"></i>
+
+      900 37 33 05
     </div>
-    </article>
-		</section>
-
-		<!-- <aside>
-			<div class="widget">
-				<h2 class="widget-titulo">Titutlo del Widget</h2>
-			</div>
-		</aside> -->
-	</main>
-
-	<footer></footer>	
+    <div class="footer-items-center card-items">
+      <i href="#" class="fa  fa-cc-visa  fa-2x card-item" aria-hidden="true"></i>
+      <i href="#" class="fa  fa-cc-mastercard  fa-2x card-item" aria-hidden="true"></i>
+      <i href="#" class="fa  fa-cc-amex  fa-2x card-item" aria-hidden="true"></i>
+      <i href="#" class="fa  fa-cc-paypal fa-2x card-item" aria-hidden="true"></i>
+    </div>
+  </footer>
 </body>
+
 </html>
