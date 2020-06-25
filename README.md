@@ -1,4 +1,4 @@
-# Webpack Frontend Starterkit
+# Test Diego Del Barrio
 
 [![Dependabot badge](https://flat.badgen.net/dependabot/wbkd/webpack-starter?icon=dependabot)](https://dependabot.com/)
 
