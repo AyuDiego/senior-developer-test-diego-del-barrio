@@ -1,6 +1,5 @@
 
 function validar(){
-    alert("Hello! I am an alert box!!");
     document.getElementById('formId').submit();
   
     var todo_correcto = true;
