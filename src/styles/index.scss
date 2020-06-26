@@ -120,7 +120,11 @@
             padding-bottom: 14px;
         }
         }
-
+        section.principal {
+          @media screen and (min-width: 981px) {
+          margin-left: 38px;
+          }
+        }
         .footer-phone-text {
           padding-right: 1%;
         }
@@ -146,6 +150,9 @@
         }
 
         .card-item {
+          @media screen and (min-width: 981px) {
+            padding-right: 12.55px;
+          }
           padding-right: 2%;
         }
 
