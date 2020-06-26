@@ -95,74 +95,55 @@
                 <div class="column-2">
                   <div class="box-item">
                     <input class="box-item-input" type="text" id="adress" name="adress" placeholder="Dirección" required>
-                    <span class="box-item-icon"><i class="fa fa-check"></i></span>
-                    <p  class="box-item-error box-item" id="test2" ></p>
+                 
+                    <p  class="box-item-error   errorMessage" id="adresserror" ></p>
                   </div>
                   <div class="box-item">
-                    <input class="box-item-input" type="text" id="subname" name="info" placeholder="Más información (Opcional)">
-                    <span class="box-item-icon"><i class="fa fa-check"></i></span>
-                    <span class="box-item-error">Este campo es obligatorio.</span>
+                    <input class="box-item-input" type="text" id="masinfo" name="info" placeholder="Más información (Opcional)"> 
                   </div>
                 </div>
                 <div class="column-2">
                   <div class="box-item">
-                    <input class="box-item-input" type="number" name="postalCode" placeholder="Código postal" required>
-                    <span class="box-item-icon"><i class="fa fa-check"></i></span>
-                    <span class="box-item-error">Este campo es obligatorio.</span>
+                    <input class="box-item-input" type="number" id="postalCode" name="postalCode" placeholder="Código postal" required>
+                    
+                    <p  class="box-item-error   errorMessage" id="postalcodeerror" ></p>
                   </div>
                   <div class="box-item">
-                    <input class="box-item-input" type="text" name="city" placeholder="Ciudad" required>
-                    <span class="box-item-icon"><i class="fa fa-check"></i></span>
-                    <span class="box-item-error">Este campo es obligatorio.</span>
-                  </div>
-                </div>
-                <div class="column-2">
-                  <div class="box-item">
-                    <input class="box-item-input" type="number" name="postalCode" placeholder="Código postal" required>
-                    <span class="box-item-icon"><i class="fa fa-check"></i></span>
-                    <span class="box-item-error">Este campo es obligatorio.</span>
-                  </div>
-                  <div class="box-item">
-                    <input class="box-item-input" type="text" name="city" placeholder="Ciudad">
-                    <span class="box-item-icon"><i class="fa fa-check"></i></span>
-                    <span class="box-item-error">Este campo es obligatorio.</span>
+                    <input class="box-item-input" type="text" id="city" name="city" placeholder="Ciudad" required>
+                   
+                    <p  class="box-item-error   errorMessage" id="cityerror" ></p>
                   </div>
                 </div>
                 <div class="column-2">
                   <div class="fix-50">
                     <div class="box-item">
-                      <input class="box-item-input" type="text" name="city" placeholder="Provincia">
-                      <span class="box-item-icon"><i class="fa fa-check"></i></span>
-                      <span class="box-item-error">Este campo es obligatorio.</span>
+                      <input class="box-item-input" type="text" id="provincia" name="provincia" placeholder="Provincia" required>
+                
+                      <p  class="box-item-error   errorMessage" id="provinciaerror" ></p>
                     </div>
 
                   </div>
                   <div class="fix-50">
                     <div class="box-item box-item-prefix">
-                      <input class="box-item-input" type="number" name="postalCode" placeholder="Prefijo" required>
-                      <span class="box-item-icon"><i class="fa fa-check"></i></span>
-                      <span class="box-item-error">Este campo es obligatorio.</span>
+                      <input class="box-item-input" type="number" id="prefix" name="prefix" placeholder="Prefijo" >
+                      <!-- <p  class="box-item-error   errorMessage" id="prefixerror" ></p> -->
                     </div>
                     <div class="box-item box-item-phone">
-                      <input class="box-item-input" type="text" name="city" placeholder="Telefono" required>
-                      <span class="box-item-icon"><i class="fa fa-check"></i></span>
-                      <span class="box-item-error">Este campo es obligatorio.</span>
+                      <input class="box-item-input" type="text" id="phone" name="phone" placeholder="Telefono" required>
+                      <p  class="box-item-error   errorMessage" id="phoneerror" ></p>
                     </div>
                   </div>
                 </div>
                 <div class="column-2">
 
                   <div class="box-item">
-                    <input class="box-item-input" type="number" name="nif"
-                      placeholder="NIF (solo Canarias, Ceuta y Melilla) " required>
-                    <span class="box-item-icon"><i class="fa fa-check"></i></span>
-                    <span class="box-item-error">Este campo es obligatorio.</span>
+                    <input class="box-item-input" type="number" id="nif" name="nif"
+                      placeholder="NIF (solo Canarias, Ceuta y Melilla) " >
+                      <!-- <p  class="box-item-error   errorMessage" id="niferror" ></p> -->
                   </div>
                   <div class="box-item">
-                    <input class="box-item-input" type="text" name="adressName" placeholder="Nombre de la dirección"
-                      required>
-                    <span class="box-item-icon"><i class="fa fa-check"></i></span>
-                    <span class="box-item-error">Este campo es obligatorio.</span>
+                    <input class="box-item-input" type="text" id="adressName" name="adressName" placeholder="Nombre de la dirección" >
+                      <!-- <p  class="box-item-error   errorMessage" id="adressNameError" ></p> -->
                     <br>
                     <span class="box-item-info">Ej.: Casa / Trabajo </span>
                   </div>

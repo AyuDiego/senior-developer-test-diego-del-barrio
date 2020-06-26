@@ -423,14 +423,14 @@
       #myform input:focus:invalid { /* when a field is considered invalid by the browser */
           background: #fff url(../images/invalid.png) no-repeat 98% center;
           background-size: 30px;
-          box-shadow: 0 0 5px #d45252;
-          border-color: #b03535
+          box-shadow: 0 0 5px #d45252 !important;
+          border-color: #b03535 !important;
       }
       #myform input:required:valid  { /* when a field is considered valid by the browser */
         background: #fff url(../images/valid.png) no-repeat 98% center;
         background-size: 20px;
         ~ .box-item-error {
-          display:none;
+          display:none !important;
         }
         // box-shadow: 0 0 5px #5cd053;
         // border-color: #28921f;
