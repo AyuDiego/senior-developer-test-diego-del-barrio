@@ -63,7 +63,7 @@
             background-color: #FFFFFF;
             height: 100%;
             @media screen and (min-width: 981px) {
-                margin-right: 28px;  
+                margin-right: 56px;
             }
 
 
@@ -126,8 +126,7 @@
                 justify-content: space-between;
                 display: flex;
                 align-items: center;
-                padding: 12px;
-                
+                padding: 12px; 
             }
 
             .subheader-color {
@@ -161,9 +160,9 @@
                 display: flex;
                 .fix-50{
                     &:first-child{
-                        margin-right: 28px;
+                        // margin-right: 28px;
                     }
-                    width: calc(50% - 28px);
+                    width: calc(50% - 0px);
                      
                 }
                 > .box-item {
