@@ -168,7 +168,8 @@
                 }
                 > .box-item {
                     width: calc(50% - 14px); // 28px margin
-                    display: inherit;
+                    display: flex;
+                    flex-direction: column;
                 }
             }
 

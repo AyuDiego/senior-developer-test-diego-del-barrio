@@ -385,3 +385,53 @@
         // input:required {
         // outline: 1px solid red;
         // }
+
+          .errorMessage{
+            display: none;
+            padding: 10px;
+            background-color: rgba(250, 232, 232, 0.2);
+            color: red;
+            border-radius: 5px;
+            -webkit-animation: shadow-drop-2-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            animation: shadow-drop-2-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+          }
+        // #namerror, #subnamerror {
+        //   display: none;
+        //   padding: 10px;
+        //   background-color: rgba(250, 232, 232, 0.2);
+        //   color: red;
+        //   border-radius: 5px;
+        //   -webkit-animation: shadow-drop-2-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        //   animation: shadow-drop-2-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+          
+        // }
+        
+        #succesuname {
+          display: none;
+          padding: 10px;
+          border: solid green 1px;
+          background-color: rgba(251, 252, 251, 0.521);
+          color: green;
+          border-radius: 5px;
+          -webkit-animation: shadow-drop-2-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+          animation: shadow-drop-2-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        
+        }
+       
+        
+         
+      #myform input:focus:invalid { /* when a field is considered invalid by the browser */
+          background: #fff url(../images/invalid.png) no-repeat 98% center;
+          background-size: 30px;
+          box-shadow: 0 0 5px #d45252;
+          border-color: #b03535
+      }
+      #myform input:required:valid  { /* when a field is considered valid by the browser */
+        background: #fff url(../images/valid.png) no-repeat 98% center;
+        background-size: 20px;
+        ~ .box-item-error {
+          display:none;
+        }
+        // box-shadow: 0 0 5px #5cd053;
+        // border-color: #28921f;
+    }

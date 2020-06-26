@@ -4,11 +4,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script> 
+  <script type="text/javascript" src="./scripts/validation.js"></script>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;1,400&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
     integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
-    <script src="./scripts/validation.js"></script>
   <title>webpack starterkit</title>
 </head>
 
@@ -75,30 +76,30 @@
           </div>
           <section>
             <h4> Rellena los datos para entregar tu pedido:</h1>
-              <form name='formulario-js' onsubmit='return validar()'>
+              <form name="myform" id="myform"  >
                 <div class="column-2">
                   <div class="box-item">
                     <input class="box-item-input" type="text" id="name" name="name" placeholder="Nombre" required>
-                    <span class="box-item-icon"><i class="fa fa-check"></i></span>
-                    <span class="box-item-error">Este campo es obligatorio.</span>
+                    <!-- <span class="box-item-icon"><i class="fa fa-check"></i></span> --> 
+                    <p  class="box-item-error   errorMessage" id="nameerror" ></p>
+                    
                   </div>
                   <div class="box-item">
                     <input class="box-item-input" type="text" id="subname" name="subname" placeholder="Apellidos"
                       required>
-                    <span class="box-item-icon"><i class="fa fa-check"></i></span>
-                    <span class="box-item-error">Este campo es obligatorio.</span>
+                      <p  class="box-item-error   errorMessage" id="subnamerror" ></p>
                   </div>
                 </div>
 
 
                 <div class="column-2">
                   <div class="box-item">
-                    <input class="box-item-input" type="text" name="adress" placeholder="Dirección" required>
+                    <input class="box-item-input" type="text" id="adress" name="adress" placeholder="Dirección" required>
                     <span class="box-item-icon"><i class="fa fa-check"></i></span>
-                    <span class="box-item-error">Este campo es obligatorio.</span>
+                    <p  class="box-item-error box-item" id="test2" ></p>
                   </div>
                   <div class="box-item">
-                    <input class="box-item-input" type="text" name="info" placeholder="Más información (Opcional)">
+                    <input class="box-item-input" type="text" id="subname" name="info" placeholder="Más información (Opcional)">
                     <span class="box-item-icon"><i class="fa fa-check"></i></span>
                     <span class="box-item-error">Este campo es obligatorio.</span>
                   </div>
@@ -263,8 +264,8 @@
                 </ul>
 
                 <div class="btn-group">
-
-                  <button type="submit" class="button-1">CONTINUAR A PAGO </button>
+                  <!-- <input type="submit" class="btn btn-primary"><br><br> -->
+                  <button id="idBtn" onclick="validate()" class="button-1">CONTINUAR A PAGO </button>
                 </div>
 
               </form>
